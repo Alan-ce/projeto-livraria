@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO 12</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <h1 class="titulo_pro">PROJETO BIBLIOTECA - ALAN SOUTO</h1>
+        </header>
+        
+        <form id="form_livro" class="formLivro">
+            <h2 class="titulo_cad_novo">CADASTRE NOVO LIVRO</h2>
+            <div class="campoColuna">
+                <input type="text" id="titulo" placeholder="Título" required>
+                <input type="text" id="autor" placeholder="Autor" required>
+                <input type="text" id="genero" placeholder="Gênero" required>
+                <input type="date" id="data_publicacao" required>
+            </div>
+            <button type="submit">CADASTRAR LIVRO</button>
+        </form>
+            <h1>* * *</h1>
+            <input type="text" class="pesquisar" id="pesquisa_input" placeholder="Busque por livro, autor, genero, data" oninput="buscar_livros()">
+            <div id="lista_livros" class="livrosContainer">
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+<footer>DESENVOLVIDO POR ALAN SOUTO - 2024 - TODOS OS DIREITOS RESERVADOS</footer>
+</html>
